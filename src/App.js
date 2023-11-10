@@ -1,9 +1,16 @@
 import './App.css';
 
+import AlbumsContext from './AlbumContext';
+import NavBar from './Components/NavBar';
+import Albums from './Components/Albums';
+
 function App() {
   return (
     <div className="App">
-      <h1>Album list</h1>
+      <AlbumsContext>
+        <NavBar/>
+        <Albums/>
+      </AlbumsContext>
     </div>
   );
 }
