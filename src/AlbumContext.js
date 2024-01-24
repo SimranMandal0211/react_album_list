@@ -4,8 +4,8 @@ import { useEffect,useState } from "react";
 const AlbumContext=createContext();
 
 const useValue=()=>{
-const value=useContext(AlbumContext);
-return value;
+    const value = useContext(AlbumContext);
+    return value;
 }
 
 const AlbumsContext=({children})=>{
